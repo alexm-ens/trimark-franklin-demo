@@ -12,8 +12,10 @@ import {
   loadBlocks,
   loadCSS,
 } from './aem.js';
+import { decorateTitleSection } from './custom.js';
 
-const LCP_BLOCKS = []; // add your LCP blocks to the list
+
+const LCP_BLOCKS = ['carousel']; // add your LCP blocks to the list
 
 /**
  * Builds hero block and prepends to main in a new section.
@@ -98,8 +100,8 @@ async function loadEager(doc) {
  * @param {Element} doc The container element
  */
 async function loadLazy(doc) {
-  // const main = doc.querySelector('main');
-  // await loadBlocks(main);
+  const main = doc.querySelector('main');
+  await loadBlocks(main);
 
   const { hash } = window.location;
   const element = hash ? doc.getElementById(hash.substring(1)) : false;
@@ -108,12 +110,14 @@ async function loadLazy(doc) {
   loadHeader(doc.querySelector('header'));
   // loadFooter(doc.querySelector('footer'));
 
+  decorateTitleSection(main);
+
   loadCSS(`${window.hlx.codeBasePath}/styles/lazy-styles.css`);
   loadFonts();
 
   sampleRUM('lazy');
-  // sampleRUM.observe(main.querySelectorAll('div[data-block-name]'));
-  // sampleRUM.observe(main.querySelectorAll('picture > img'));
+  sampleRUM.observe(main.querySelectorAll('div[data-block-name]'));
+  sampleRUM.observe(main.querySelectorAll('picture > img'));
 }
 
 /**
