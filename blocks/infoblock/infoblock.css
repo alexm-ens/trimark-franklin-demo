@@ -1,0 +1,36 @@
+.infoblock {
+  background-color: var(--background-color);
+  border: 1px solid #ccc;
+  position: absolute;
+  right: 0%;
+  top: 15%;
+  height: 30%;
+  width: 55%;
+  opacity: 0.8;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.infoblock h3 {
+  font-size: 45px;
+  padding-top: 10px;
+  margin: 1em 0;
+  font-weight: 400;
+  text-align: center;
+}
+
+.infoblock ul {
+  list-style: none;
+}
+
+.infoblock ul > li {
+  font-size: 18px;
+  line-height: 1;
+  padding-bottom: 10px;
+  margin: 1em 0;
+}
+
+.infoblock ul > li > span {
+  margin-right: 6px;
+  vertical-align: middle;
+}

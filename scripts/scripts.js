@@ -2,7 +2,7 @@ import {
   sampleRUM,
   buildBlock,
   loadHeader,
-  loadFooter,
+  // loadFooter,
   decorateButtons,
   decorateIcons,
   decorateSections,
@@ -12,8 +12,7 @@ import {
   loadBlocks,
   loadCSS,
 } from './aem.js';
-import { decorateTitleSection } from './custom.js';
-
+import { decorateTitleSection, decorateBackgroundSection } from './custom.js';
 
 const LCP_BLOCKS = ['carousel']; // add your LCP blocks to the list
 
@@ -111,6 +110,7 @@ async function loadLazy(doc) {
   // loadFooter(doc.querySelector('footer'));
 
   decorateTitleSection(main);
+  decorateBackgroundSection(main);
 
   loadCSS(`${window.hlx.codeBasePath}/styles/lazy-styles.css`);
   loadFonts();
