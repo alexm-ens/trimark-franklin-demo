@@ -1,0 +1,35 @@
+.featured-projects h3 {
+  font-size: 19.5px;
+  font-weight: 800;
+  margin-bottom: 1em;
+}
+
+.featured-projects .projects-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 160px);
+  gap: 22px 40px;
+}
+
+.featured-projects .featured-project img {
+  border: 1px solid #000;
+  width: 100%;
+}
+
+.featured-projects .featured-project h4 > a{
+  color: #ad243e;
+  font-size: 13px;
+}
+
+.featured-projects .featured-project p:last-child {
+  line-height: 1.3em;
+}
+
+.featured-projects .view-all-projects {
+  margin-top: 3em;
+  font-size: 13px;
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+.featured-projects .view-all-projects > a {
+  color: #aa233e;
+}

@@ -187,7 +187,23 @@ h2 {
   bottom: 5%;
 }
 
+.section.portfolio-title-container {
+  padding: 16px 20px 23px;
+  margin: 0 auto;
+  max-width: 1002px;
+}
+
+.section.video-container {
+  padding: 16px 20px 23px;
+  margin: 0 auto;
+  max-width: 1002px;
+}
+
 footer {
+  border-top: #d0d0d0 1px solid;
+}
+
+footer .footer {
   max-width: 962px;
   margin: 0 auto;
 }
@@ -196,3 +212,4 @@ footer {
 footer a{
   color: var(--grey-color);
 }
+
