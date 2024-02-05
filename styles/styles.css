@@ -66,6 +66,10 @@ p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
 }
 
+ul {
+  padding-left: 0;
+}
+
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
@@ -181,4 +185,14 @@ h2 {
   position: absolute;
   text-align: center;
   bottom: 5%;
+}
+
+footer {
+  max-width: 962px;
+  margin: 0 auto;
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+footer a{
+  color: var(--grey-color);
 }

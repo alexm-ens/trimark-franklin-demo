@@ -1,0 +1,13 @@
+.footer-socials {
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-socials > div {
+  width: 450px;
+}
+
+.footer-socials img {
+  height: 100%;
+}

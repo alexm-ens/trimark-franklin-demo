@@ -1,0 +1,23 @@
+.nav-footer {
+  margin-top: 1em;
+}
+
+.nav-footer ul{
+  width: 100%;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  padding: 0;
+}
+
+.nav-footer ul > li {
+  margin-left: 15px;
+}
+
+.nav-footer ul > li:first-child {
+  margin-left: 0;
+}
+
+.nav-footer ul > li > a {
+  font-weight: bold;
+}

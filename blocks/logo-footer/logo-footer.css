@@ -1,0 +1,10 @@
+.logo-footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.logo-footer img {
+  height: 59px;
+  width: auto;
+}

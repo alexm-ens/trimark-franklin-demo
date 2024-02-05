@@ -1,0 +1,10 @@
+.footer-text {
+  color: #666;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+}
+
+.footer-text > p:last-child {
+  margin-top: 0.5em;
+}
