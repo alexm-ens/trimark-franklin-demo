@@ -12,8 +12,9 @@ import {
   loadBlocks,
   loadCSS,
 } from './aem.js';
+import { decorateTitleSection, decorateBackgroundSection } from './custom.js';
 
-const LCP_BLOCKS = []; // add your LCP blocks to the list
+const LCP_BLOCKS = ['carousel']; // add your LCP blocks to the list
 
 /**
  * Builds hero block and prepends to main in a new section.
@@ -107,6 +108,9 @@ async function loadLazy(doc) {
 
   loadHeader(doc.querySelector('header'));
   loadFooter(doc.querySelector('footer'));
+
+  decorateTitleSection(main);
+  decorateBackgroundSection(main);
 
   loadCSS(`${window.hlx.codeBasePath}/styles/lazy-styles.css`);
   loadFonts();
