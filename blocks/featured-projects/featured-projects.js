@@ -1,6 +1,6 @@
 function prepareProject(projectDiv) {
   const projectImage = projectDiv.querySelector('p:first-child > picture');
-  console.log(projectImage);
+  console.log(projectDiv);
   const imageLink = projectDiv.querySelector('p.button-container > a').href;
 
   // wrap link in image
