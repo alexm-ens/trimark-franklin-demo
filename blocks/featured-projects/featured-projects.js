@@ -11,7 +11,7 @@ function prepareProject(projectDiv) {
   projectDiv.querySelector('p:first-child').append(imageLinkWrapper);
 
   // remove old link
-  projectDiv.querySelector('p.button-container').remove();
+  projectDiv.querySelector('div').children[1].remove();
 }
 
 export default function decorate(block) {
