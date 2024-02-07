@@ -1,7 +1,6 @@
 function prepareProject(projectDiv) {
   const projectImage = projectDiv.querySelector('p:first-child > picture');
-  console.log(projectImage);
-  const imageLink = projectDiv.querySelector('p.button-container > a').href;
+  const imageLink = projectDiv.querySelector('p > a').href;
 
   // wrap link in image
   const imageLinkWrapper = document.createElement('a');
@@ -12,7 +11,7 @@ function prepareProject(projectDiv) {
   projectDiv.querySelector('p:first-child').append(imageLinkWrapper);
 
   // remove old link
-  projectDiv.querySelector('p.button-container').remove();
+  projectDiv.querySelector('div').children[1].remove();
 }
 
 export default function decorate(block) {

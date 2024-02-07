@@ -87,10 +87,6 @@ body.appear {
 header {
   height: var(--nav-height);
   border-bottom: 12px solid #919192;
-
-  /* POTOM UBRAT */
-  
-  overflow: hidden;
 }
 
 /* links */

@@ -56,6 +56,10 @@
   font-weight: bold;
 }
 
+.navigation-buttons .button:hover {
+  text-decoration: underline;
+}
+
 .navigation-buttons > div > p:first-child {
   margin-right: 5px;
 }
@@ -81,16 +85,67 @@
   font-size: 15px; 
   padding-bottom: 5px;
   margin-left: 15px;
+  position: relative;
+}
+
+.navigation-categories ul ul li {
+  min-width: 200px;
+  margin-left: 0;
+  padding-bottom: 0;
+}
+
+.navigation-categories ul ul a {
+  background-color: #fff;
+  color: #333;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1em;
 }
 
 .navigation-categories ul > li:first-child {
   margin-left: 0;
 }
 
-.navigation-categories ul > li > a:hover {
+.navigation-categories ul > li:hover > a {
   color: var(--red-color);
 }
 
 .navigation-categories ul > li > ul {
   display: none;
+}
+
+.navigation-categories ul > li:hover > ul {
+  display: initial;
+  position: absolute;
+  left: -25px;
+  top: 100%;
+  background-color: #fff;
+  z-index: 100;
+}
+
+.navigation-categories ul > li > ul > li:first-child {
+  margin-left: 0;
+}
+
+.navigation-categories ul > li > ul:hover {
+  display: initial;
+}
+
+.navigation-categories ul > li:hover > ul > li > ul {
+  left: 100%;
+  top: 0;
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+.navigation-categories ul > li > ul > li > a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  padding: 7px 5px 5px 23px;
+
+}
+
+.navigation-categories ul > li > ul > li > a:hover {
+  color: #fff;
+  background-color: var(--red-color);
 }
