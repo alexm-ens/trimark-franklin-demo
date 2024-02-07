@@ -7,6 +7,7 @@ function renderSearchBar(searchBarBlock) {
   const inputImage = document.createElement('input');
   inputImage.type = 'image';
   inputImage.src = '/icons/search.svg';
+  inputImage.alt = 'Search icon';
 
   searchBar.append(inputSearch);
   searchBar.append(inputImage);
@@ -30,7 +31,7 @@ export default function decorate(block) {
   const navigationLogo = block.children[0];
   navigationLogo.classList.add('navigation-logo');
   const navigationLogoLink = document.createElement('a');
-  navigationLogoLink.href = '/';
+  navigationLogoLink.href = window.location.href;
   navigationLogoLink.append(navigationLogo);
   block.prepend(navigationLogoLink);
 

@@ -183,6 +183,12 @@ h2 {
   bottom: 5%;
 }
 
+.section.infoblock-container {
+  position: relative;
+  background-size: cover;
+  height: 1600px;
+}
+
 .section.portfolio-title-container {
   padding: 16px 20px 23px;
   margin: 0 auto;
