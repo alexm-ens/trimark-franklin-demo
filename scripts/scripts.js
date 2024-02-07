@@ -100,6 +100,9 @@ async function loadEager(doc) {
  */
 async function loadLazy(doc) {
   const main = doc.querySelector('main');
+  decorateTitleSection(main);
+  decorateBackgroundSection(main);
+
   await loadBlocks(main);
 
   const { hash } = window.location;
@@ -108,9 +111,6 @@ async function loadLazy(doc) {
 
   loadHeader(doc.querySelector('header'));
   loadFooter(doc.querySelector('footer'));
-
-  decorateTitleSection(main);
-  decorateBackgroundSection(main);
 
   loadCSS(`${window.hlx.codeBasePath}/styles/lazy-styles.css`);
   loadFonts();

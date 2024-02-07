@@ -1,7 +1,2 @@
 /* add global styles that can be loaded post LCP here */
 
-.section.infoblock-container {
-  position: relative;
-  background-size: cover;
-  height: 1600px;
-}
