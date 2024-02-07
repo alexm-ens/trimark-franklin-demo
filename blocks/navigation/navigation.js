@@ -29,6 +29,11 @@ export default function decorate(block) {
   const navigationContent = document.createElement('div');
   const navigationLogo = block.children[0];
   navigationLogo.classList.add('navigation-logo');
+  const navigationLogoLink = document.createElement('a');
+  navigationLogoLink.href = '/';
+  navigationLogoLink.append(navigationLogo);
+  block.prepend(navigationLogoLink);
+
   navigationContent.classList.add('navigation-content');
   navigationContent.append(...Array.from(block.children).slice(1));
 
